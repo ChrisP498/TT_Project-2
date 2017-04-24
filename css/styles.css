@@ -12,28 +12,77 @@
 
 body {
   margin: 0;
+  padding: 0;
   background: #f2f2f2;
   font-family: 'Lato', sans-serif;
+  color: #404040;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 li {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 a {
+  padding: 0;
+  margin: 0;
   text-decoration: none;
 }
-
-
 
 /*=========================*/
 
 
 
 /*===Navigation===*/
+  /*----------------------------------------------------------------------
+  In order as appears in following code:
+  1) Centers the student name and list items under the nav class.
+  2) Creates white border and background for list items.
+  3) Sets the full range of the list item boxes as a clickable area. Also
+     sets font and text style and color as well as the padding for the anchor
+     elements under the nav class.
+  -----------------------------------------------------------------------*/
+
+/*1)*/
+.student-name,
+.nav {
+  display: block;
+  text-align: center;
+}
+
+/*2)*/
+.nav li {
+  border: 1px solid white;
+  border-radius: 1%;
+  background: white;
+  margin: 7px 25px;
+}
+
+/*3)*/
+.nav a {
+  display: block;
+  padding: 7px 0;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
 /*=========================*/
 
+
+
 /*===Main Content===*/
+
+.layout-profile {
+  margin: 0 auto;
+  max-width: 75%;
+}
 /*=========================*/
 
 /*===Footer===*/
