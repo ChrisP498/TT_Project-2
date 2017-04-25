@@ -1,5 +1,9 @@
 /*===Universal Box Sizing===*/
+  /*---------------------------------------------------------------------
+  1) Universal box sytling to allow for more control over style.
+  ----------------------------------------------------------------------*/
 
+/*1)*/
 * {
   box-sizing: border-box;
 }
@@ -9,7 +13,16 @@
 
 
 /*===Base Page Styles===*/
+  /*----------------------------------------------------------------------
+  1) Body has base color, font family, font color, padding and, margin vaules
+     set.
+  2) The ul has been reset for easier use as the css progresses.
+  3) List styles set to none to rid the page of any bulleted points when using
+     li. Padding and margin also reseted.
+  4) Links are no longer underlined and have reseted padding and margin.
+   -----------------------------------------------------------------------*/
 
+/*1)*/
 body {
   margin: 0;
   padding: 0;
@@ -18,17 +31,20 @@ body {
   color: #404040;
 }
 
+/*2)*/
 ul {
   padding: 0;
   margin: 0;
 }
 
+/*3)*/
 li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
+/*4)*/
 a {
   padding: 0;
   margin: 0;
@@ -41,13 +57,12 @@ a {
 
 /*===Navigation===*/
   /*----------------------------------------------------------------------
-  In order as appears in following code:
   1) Centers the student name and list items under the nav class.
   2) Creates white border and background for list items.
   3) Sets the full range of the list item boxes as a clickable area. Also
      sets font and text style and color as well as the padding for the anchor
      elements under the nav class.
-  -----------------------------------------------------------------------*/
+   -----------------------------------------------------------------------*/
 
 /*1)*/
 .student-name,
@@ -77,11 +92,37 @@ a {
 
 
 
-/*===Main Content===*/
+/*===Profile===*/
+  /*----------------------------------------------------------------------
+  1) Profile picture has been re-sized to take up less space and
+     appear centered on the page.
+  2) Paragraph under profile picture has been centered, text color changed
+     and, a margin applied to give it a more tappered look.
+   -----------------------------------------------------------------------*/
 
+/*1)*/
 .layout-profile {
-  margin: 0 auto;
-  max-width: 75%;
+  display: block;
+  max-width: 65%;
+  margin: 30px auto;
+}
+
+/*2)*/
+.profile p {
+  text-align: center;
+  color: #a6a6a6;
+  margin: 0 15px;
+}
+
+/*=========================*/
+
+
+
+/*===Main Container===*/
+
+#portfolio {
+  border: 1px solid red;
+  background: red;
 }
 /*=========================*/
 
