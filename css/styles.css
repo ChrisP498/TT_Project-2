@@ -2,7 +2,6 @@
   /*---------------------------------------------------------------------
   1) Universal box sytling to allow for more control over style.
   ----------------------------------------------------------------------*/
-
 /*1)*/
 * {
   box-sizing: border-box;
@@ -21,7 +20,6 @@
      li. Padding and margin also reseted.
   4) Links are no longer underlined and have reseted padding and margin.
    -----------------------------------------------------------------------*/
-
 /*1)*/
 body {
   margin: 0;
@@ -55,79 +53,200 @@ a {
 
 
 
-/*===Navigation===*/
-  /*----------------------------------------------------------------------
-  1) Centers the student name and list items under the nav class.
-  2) Creates white border and background for list items.
-  3) Sets the full range of the list item boxes as a clickable area. Also
-     sets font and text style and color as well as the padding for the anchor
-     elements under the nav class.
-   -----------------------------------------------------------------------*/
+/*===Header====*/
+  /*------Navigation and Profile in this section------*/
+    /*===Navigation===*/
+      /*----------------------------------------------------------------------
+      1) Centers the student name and list items under the nav class.
+      2) Creates white border and background for list items.
+      3) Sets the full range of the list item boxes as a clickable area. Also
+         sets font and text style and color as well as the padding for the anchor
+         elements under the nav class.
+       -----------------------------------------------------------------------*/
+    /*1)*/
+    .student-name,
+    .nav {
+      display: block;
+      text-align: center;
+    }
 
+    /*2)*/
+    .nav li {
+      border: 1px solid white;
+      border-radius: 1%;
+      background: white;
+      margin: 7px 25px;
+    }
+
+    /*3)*/
+    .nav a {
+      display: block;
+      padding: 7px 0;
+      color: #333;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+
+    /*=========================*/
+
+    /*===Profile===*/
+      /*----------------------------------------------------------------------
+      1) Profile picture has been re-sized to take up less space and
+         appear centered on the page.
+      2) Paragraph under profile picture has been centered, text color changed
+         and, a margin applied to give it a more tappered look.
+      3) Bottom padding to give the Profile section some "breathing
+         room" from the top of the Portfolio section.
+       -----------------------------------------------------------------------*/
+    /*1)*/
+    .layout-profile {
+      display: block;
+      max-width: 65%;
+      margin: 30px auto;
+    }
+
+    /*2)*/
+    .profile p {
+      text-align: center;
+      color: #a6a6a6;
+      margin: 0 15px;
+    }
+
+    /*3)*/
+    .profile {
+      padding-bottom: 40px;
+    }
+
+    /*=========================*/
+/*======================================================*/
+
+
+
+/*===Portfolio===*/
+/*----------------------------------------------------------------------
+1) Sets border and padding to provide a little extra space and define the
+   total area of the portfolio id. Sets background to white and also centers
+   text.
+2) Adds an uppercase style to the h3 element to reflect the mock-up.
+3) This centers and sizes the images for the various future projects in
+   the portfolio section.
+ -----------------------------------------------------------------------*/
 /*1)*/
-.student-name,
-.nav {
-  display: block;
+#portfolio {
+  border: 5px solid white;
+  background: white;
+  padding: 40px 15px 40px;
   text-align: center;
 }
 
 /*2)*/
-.nav li {
-  border: 1px solid white;
-  border-radius: 1%;
-  background: white;
-  margin: 7px 25px;
+#portfolio h3 {
+  text-transform: uppercase;
 }
 
 /*3)*/
-.nav a {
+.my-work {
   display: block;
-  padding: 7px 0;
-  color: #333;
-  text-transform: uppercase;
-  font-weight: bolder;
-}
-
-/*=========================*/
-
-
-
-/*===Profile===*/
-  /*----------------------------------------------------------------------
-  1) Profile picture has been re-sized to take up less space and
-     appear centered on the page.
-  2) Paragraph under profile picture has been centered, text color changed
-     and, a margin applied to give it a more tappered look.
-   -----------------------------------------------------------------------*/
-
-/*1)*/
-.layout-profile {
-  display: block;
-  max-width: 65%;
+  max-width: 95%;
   margin: 30px auto;
 }
 
-/*2)*/
-.profile p {
-  text-align: center;
-  color: #a6a6a6;
-  margin: 0 15px;
-}
-
 /*=========================*/
 
 
 
-/*===Main Container===*/
+/*===Main-Footer===*/
+  /*------Contact is inside the footer section------*/
+    /*===Contact===*/
+      /*----------------------------------------------------------------------
+      1) Gives "breathing room" between the Email and top border beneath it.
+      2) Creates a centered, uppercased, bolder h4 element for contact.
+      3) Styles the paragraph for the contact section.
+      4) Gives some padding for the Phone and Email anchor tags.
+      5) Changes the color of the mail and email links from the hyperlink
+         look to a black color.
+       -----------------------------------------------------------------------*/
+   /*1)*/
+    #contact {
+      margin-bottom: 50px;
+    }
 
-#portfolio {
-  border: 1px solid red;
-  background: red;
-}
-/*=========================*/
+   /*2)*/
+    #contact h4 {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bolder;
+      margin: 45px auto;
+    }
 
-/*===Footer===*/
-/*=========================*/
+   /*3)*/
+    #contact p {
+      color: #a6a6a6;
+      text-align: center;
+      margin: 0 20px 20px;
+    }
+
+    /*4)*/
+    .phone a,
+    .email a {
+      padding: 10px;
+    }
+
+    /*5)*/
+    a[href^="mailto:"],
+     [href^="tel:"] {
+       color: #595959;
+     }
+
+    /*============================*/
+
+    /*===Top-Border===*/
+      /*----------------------------------------------------------------------
+      1) A div set simply to create a border that only spans 95% of the
+         container width.
+       -----------------------------------------------------------------------*/
+    /*1)*/
+    .top-border {
+      border-top: 1.7px solid #d9d9d9;
+      margin: 0 auto;
+      padding: 0;
+      height: 1px;
+      width: 95%;
+    }
+
+    /*=========================*/
+
+    /*===Bottom-Footer===*/
+      /*----------------------------------------------------------------------
+      1) Floats my name to the left of the bottom footer and gives it some room
+         from the left.
+      2) Floats the Back to Top feature to the right and gives it some
+         room with margin settings.
+      3) Changes color of the Back to Top feature and sets it to uppercase.
+       -----------------------------------------------------------------------*/
+    /*1)*/
+    .footer-name {
+      float: left;
+      margin-left: 15px;
+    }
+
+    /*2)*/
+    .to-top {
+      float: right;
+      margin-top: 2px;
+      margin-right: 15px;
+    }
+
+    /*3)*/
+    .to-top a {
+      color: #000000;
+      text-transform: uppercase;
+    }
+
+    /*=========================*/
+/*======================================================*/
+
+
 
 /*===Media Queries===*/
 /*=========================*/
