@@ -13,7 +13,7 @@
   <body>
 
     <header>
-      <div class="header">
+      <div class="header clearfix">
         <div class="main-nav">
           <h1 class="student-name"> Christopher Perez </h1>
           <ul class="nav">
@@ -24,54 +24,68 @@
         </div><!--main-nav-->
         <div class="profile">
           <img class="layout-profile" src="images/responsive-layout-profile.png" alt="A profile picture">
-            <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put my skills to use!</p>
+            <p class="clearfix">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put my skills to use!</p>
         </div><!--profile-->
       </div><!--header-->
     </header>
 
     <main>
-      <div id="portfolio">
+      <div id="portfolio" class="clearfix">
         <h3>Portfolio</h3>
         <ul>
           <li>
-            <img class="my-work" src="images/portfolio-1.png" alt="Portfolio image">
-              <h2>Marketing Page</h2>
-                <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+            <div class="column-1">
+              <img class="my-work" src="images/portfolio-1.png" alt="Portfolio image">
+                <h2>Marketing Page</h2>
+                  <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+            </div><!--column-1-->
           </li>
           <li>
-            <img class="my-work" src="images/portfolio-2.png" alt="Search page image">
-              <h2>Search Page</h2>
-                <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+            <div class="column-2">
+              <img class="my-work" src="images/portfolio-2.png" alt="Search page image">
+                <h2>Search Page</h2>
+                  <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+            </div><!--column-2-->
           </li>
           <li>
-            <img class="my-work" src="images/portfolio-3.png" alt="Travel App image">
-              <h2>Travel App</h2>
-                <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+            <div class="column-1">
+              <img class="my-work" src="images/portfolio-3.png" alt="Travel App image">
+                <h2>Travel App</h2>
+                  <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+            </div><!--column-1-->
           </li>
           <li>
-            <img class="my-work" src="images/portfolio-4.png" alt="Favorite Sports page image">
-              <h2>Map of Favorite Sports</h2>
-                <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+            <div class="column-2">
+              <img class="my-work" src="images/portfolio-4.png" alt="Favorite Sports page image">
+                <h2>Map of Favorite Sports</h2>
+                  <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+            </div><!--column-2-->
           </li>
           <li>
-            <img class="my-work" src="images/portfolio-5.png" alt="Photo gallery image">
-              <h2>Photo Gallery</h2>
-                <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+            <div class="column-1">
+              <img class="my-work" src="images/portfolio-5.png" alt="Photo gallery image">
+                <h2>Photo Gallery</h2>
+                  <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+            </div><!--column-1-->
           </li>
           <li>
-            <img class="my-work" src="images/portfolio-6.png" alt="Calculator image">
-              <h2>Calculator</h2>
-                <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+            <div class="column-2">
+              <img class="my-work" src="images/portfolio-6.png" alt="Calculator image">
+                <h2>Calculator</h2>
+                  <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+            </div><!--column-2-->
           </li>
-        </div><!--#portfolio-->
+        </div><!--#portfolio .clearfix-->
     </main>
 
     <footer class="main-footer">
       <div id="contact">
         <h4>Contact</h4>
-          <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-          <p class="phone"> Phone <a href="tel:1-111-555-1234"> +1 (111) 555-1234</a></p>
-          <p class="email"> Email <a href="mailto:email@yoursite.com"> email@yoursite.com</a></p>
+          <div class="contact-me">
+            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+          </div> <!--contact-me-->
+            <p class="phone"> Phone <a href="tel:1-111-555-1234"> +1 (111) 555-1234</a></p>
+            <p class="email"> Email <a href="mailto:email@yoursite.com"> email@yoursite.com</a></p>
       </div><!--contact-->
 
       <div class="top-border"></div>
@@ -83,6 +97,11 @@
           <div class="to-top">
             <h5><a href="index.html"> Back to top </a></h5>
           </div><!--to-top-->
+          <ul class="footer-nav clearfix">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul><!--footer-nav clearfix-->
         </div><!--bottom-footer-->
     </footer><!--main-footer-->
 
