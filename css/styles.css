@@ -6,11 +6,8 @@
 
 /*=========================*/
 
-/*========== ======= ============ ======== =========== =========== ==========
-YOU ARE HAVING TROUBLE WITH SOME OF THE IMAGES STAYING IN THE POSTION
-YOU WANT THEM TOO WHEN SCAILING THE PAGE UP OR DOWN. RE-CHECK WHAT YOU'VE DONE
-SO FAR. YOU GOT THIS..........................................................
-========= ======== ========= ========== ========== =========== ========== ====*/
+
+
 /*===Base Page Styles===*/
 
 body {
@@ -99,7 +96,7 @@ a {
 #portfolio {
   border: 5px solid white;
   background: white;
-  padding: 40px 15px 40px;
+  padding: 40px 15px;
   text-align: center;
 }
 
@@ -246,24 +243,34 @@ a {
 
   /*===Portfolio===*/
 
+    #portfolio {
+      border: none;
+      padding: 40px 0;
+    }
+
+    #portfolio p {
+      font-size: .75em;
+      text-align: center;
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
     .column-1,
     .column-2 {
-      max-width: 45%;
-      vertical-align: top;
-      position: relative;
+      max-width: 50%;
     }
 
     .my-work {
-        max-width: 100%;
+        max-width: 90%;
+        margin: 10px auto;
     }
 
     .column-1 {
-      margin-left: 30px;
       float: left;
     }
 
     .column-2 {
-      margin-right: 30px;
       float: right;
     }
   /*============================*/
