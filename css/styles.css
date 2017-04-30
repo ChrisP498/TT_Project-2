@@ -6,8 +6,11 @@
 
 /*=========================*/
 
-
-
+/*========== ======= ============ ======== =========== =========== ==========
+YOU ARE HAVING TROUBLE WITH SOME OF THE IMAGES STAYING IN THE POSTION
+YOU WANT THEM TOO WHEN SCAILING THE PAGE UP OR DOWN. RE-CHECK WHAT YOU'VE DONE
+SO FAR. YOU GOT THIS..........................................................
+========= ======== ========= ========== ========== =========== ========== ====*/
 /*===Base Page Styles===*/
 
 body {
@@ -34,6 +37,8 @@ a {
   margin: 0;
   text-decoration: none;
 }
+
+/*add a hover link style here*/
 
 /*=========================*/
 
@@ -182,6 +187,13 @@ a {
 
 /*===Media Queries===*/
 
+  /*===foot-nav media query===*/
+  @media (max-width: 768px){
+      .footer-nav {
+        display: none;
+      }
+  }
+  /*======================*/
 @media (min-width: 768px) {
 
   /*===Clearfix===*/
@@ -237,6 +249,8 @@ a {
     .column-1,
     .column-2 {
       max-width: 45%;
+      vertical-align: top;
+      position: relative;
     }
 
     .my-work {
@@ -283,4 +297,66 @@ a {
 
 
   /*============================*/
+}
+
+
+
+@media (min-width: 1024px) {
+
+  /*===Clearfix===*/
+
+  .clearfix::after {
+      content: "";
+      display: table;
+      overflow: hidden;
+      clear: both;
+  }
+
+  /*=======================*/
+
+  /*===Navigation===*/
+
+  .main-nav,
+  .student-name,
+  .nav li {
+    max-width: 100%;
+  }
+
+  .student-name {
+    float: left;
+    margin-left: 30px;
+  }
+
+  .nav {
+    float: right;
+    margin: 20px 15px 0 0;
+  }
+
+  /*========================*/
+
+  /*===Profile===*/
+
+  .profile {
+    clear: both;
+  }
+
+  .layout-profile {
+    margin: 0 35px;
+  }
+
+  .profile p {
+    margin-left: 30px;
+  }
+
+  /*========================*/
+
+  /*===Portfolio===*/
+
+  .column-1,
+  .column-2 {
+    float: left;
+    max-width: 30%;
+    margin: 15px;
+  }
+  /*========================*/
 }
