@@ -185,7 +185,7 @@ a {
 /*===Media Queries===*/
 
   /*===foot-nav media query===*/
-  @media (max-width: 768px){
+  @media (max-width: 767px){
       .footer-nav {
         display: none;
       }
