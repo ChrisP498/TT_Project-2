@@ -203,6 +203,9 @@ figcaption {
       margin-left: 1.3em;
     }
 
+    .footer-nav {
+      display: none;}
+
     .to-top {
       float: right;
       margin-top: .10em;
@@ -216,20 +219,6 @@ figcaption {
 
     /*=========================*/
 /*======================================================*/
-
-
-
-/*===Media Queries===*/
-
-  /*===footer-nav media query===*/
-  @media (max-width: 767px){
-      .footer-nav {
-        display: none;
-      }
-  }
-  /*======================*/
-/*======================================================*/
-
 
 @media screen and (min-width: 768px) {
 
@@ -322,6 +311,7 @@ figcaption {
 
     .footer-nav {
       float: right;
+      display: inline-block;
     }
 
     .footer-nav li {
